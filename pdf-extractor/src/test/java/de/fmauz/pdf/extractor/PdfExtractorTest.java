@@ -2,7 +2,7 @@ package de.fmauz.pdf.extractor;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import org.junit.Before;
+import java.io.UnsupportedEncodingException;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 public class PdfExtractorTest {
 
     @Test
-    public void testDocumentParse() throws FileNotFoundException {
+    public void testDocumentParse() throws FileNotFoundException, UnsupportedEncodingException {
         File f = new File("src/test/resources/gi-proc-112-022.txt");
         if (f.exists()) {
             f.delete();
